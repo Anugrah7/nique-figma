@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Comfortaa:wght@300..700&family=Courgette&family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Rose:wght@300..700&family=Rowdies:wght@300;400;700&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="relative min-h-screen">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat filter blur-sm" style="background-image: url('./images/pexels-rachel-claire-4577179.jpg');"></div>
+    
+    <div class="relative z-10 p-4 lg:px-16">
+        <nav class="flex justify-center">
+            <a href="/" class="text-2xl lg:text-4xl text-white font-bold headMiddle">nique.</a>
+        </nav>
+
+        <div class="flex flex-col items-center justify-center text-center mt-32 lg:mt-48">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl head1">The Pure Taste Of</h1>
+            <h1 class="text-5xl md:text-7xl lg:text-9xl text-white mt-4 lg:mt-8 head2">Thailand</h1>
+            <p class="text-white text-lg md:text-xl mt-6 para1">It's important to take care of the patient, to follow <br> up with the client, but it's time to work.</p>
+        </div>
+
+        <!-- Menu -->
+        <div class="menuBox bg-white p-4 lg:p-6 shadow-lg mt-64 lg:mt-72 mx-auto max-w-xs lg:max-w-md">
+            <ul class="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4">
+                <li class="list1 flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4">
+                    <div class="relative menuIcon">
+                        <i class="fa-solid fa-bars bar text-lg"></i>
+                        <div class="dropdown-content absolute right-0 mt-2 w-40 bg-white shadow-lg rounded hidden">
+                            <a href="/menu" class="block px-4 py-2 hover:bg-gray-200">Menu</a>
+                            <a href="/restaurant" class="block px-4 py-2 hover:bg-gray-200">Restaurant</a>
+                            <a href="/contact" class="block px-4 py-2 hover:bg-gray-200">Contact</a>
+                        </div>
+                    </div>
+                    <a href="#menu" class="listItems text-center lg:text-left">menu</a>
+                    <a href="#restaurant" class="listItems text-center lg:text-left">restaurant</a>
+                    <a href="#Book" class="listItems text-center lg:text-left">contact</a>
+                    <a href="#Book" class="listItems book px-4 py-2 bg-black rounded-lg text-white">BOOK A TABLE</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- MenuSection -->
+<div id="menu" class="flex flex-wrap justify-evenly relative MenuSection mt-0">
+    <div class="flex-1 w-full lg:w-2/4">
+        <div class="bgMenu"></div>
+        <div class="relative mt-16 lg:mt-24 ml-16 lg:ml-48">
+            <h1 class="text-4xl lg:text-7xl text-center bg-gradient-to-r from-rose-700 to-orange-400 bg-clip-text text-transparent menuHead">Our Menu</h1>
+        </div>
+    </div>
+    <div class="flex flex-col lg:flex-row relative justify-between w-full lg:w-2/4 mt-8 lg:mt-0">
+        <div class="relative lg:w-1/2 p-4">
+            <h2 class="text-3xl lg:text-5xl font-bold starters">Starters</h2>
+            <img class="object-cover w-40 h-40 rounded-md mt-4" src="https://cdn.prod.website-files.com/6321d0d284b5b7ca3857fad3/6324bdfe0ebb94925875d95f_menu-tomato-toast.webp" alt="">
+            <h2 class="text-xl lg:text-3xl font-bold mt-4">Tomato Soup</h2>
+            <p class="text-md font-bold mt-2">"Enjoy the rich flavors of our fresh tomato soup."</p>
+            <h2 class="text-xl font-bold mt-2 bg-gradient-to-r from-rose-700 to-orange-400 bg-clip-text text-transparent">$4.90</h2>
+        </div>
+        <div class="relative lg:w-1/2 p-4 mt-16">
+            <img class="object-cover w-40 h-40 rounded-md mt-4" src="https://cdn.prod.website-files.com/6321d0d284b5b7ca3857fad3/6324bdfe3f4c8b7cc88b25f7_menu-noodle-soup.webp" alt="">
+            <h2 class="text-xl lg:text-3xl font-bold mt-4">Noodle Soup</h2>
+            <p class="text-md font-bold mt-2">"Enjoy the rich flavors of our fresh noodle soup."</p>
+            <h2 class="text-xl font-bold mt-2 bg-gradient-to-r from-rose-700 to-orange-400 bg-clip-text text-transparent">$5.50</h2>
+        </div>
+    </div>
+    <div class="flex flex-col lg:flex-row relative justify-between w-full lg:w-2/4 mt-8 lg:mt-16">
+        <div class="relative lg:w-1/2 p-4 BreakFast ">
+            <h2 class="text-3xl lg:text-5xl font-bold">BreakFast</h2>
+            <img class="object-cover w-40 h-40 rounded-md mt-4" src="https://cdn.prod.website-files.com/6321d0d284b5b7ca3857fad3/6324bdfd807e7a0ec31c4cb3_menu-delicious-pancakes.webp" alt="">
+            <h2 class="text-xl lg:text-3xl font-bold mt-4">Pan Cakes</h2>
+            <p class="text-md font-bold mt-2">"Enjoy the rich flavors of our Delicious Pan Cakes"</p>
+            <h2 class="text-xl font-bold mt-2 bg-gradient-to-r from-rose-700 to-orange-400 bg-clip-text text-transparent">$8.90</h2>
+        </div>
+        <div class="relative lg:w-1/2 p-4 mt-16">
+            <img class="object-cover w-40 h-40 rounded-md mt-3.2 ml-64" src="https://cdn.prod.website-files.com/6321d0d284b5b7ca3857fad3/6324bdfeb74070b437ee104c_menu-sweet-heaven.webp" alt="">
+            <h2 class="text-xl lg:text-3xl font-bold w-full mt-4 ml-64">Sweet Heaven</h2>
+            <p class="text-md font-bold mt-2 ml-64 w-full">"Enjoy the rich flavors of our Delicious Pan Cakes"</p>
+            <h2 class="text-xl font-bold mt-2 ml-64 bg-gradient-to-r from-rose-700 to-orange-400 bg-clip-text text-transparent">$10.90</h2>
+        </div>
+    </div>
+</div>
+<!-- Restaurant -->
+<div id="restaurant">
+    <div>
+        <h1 class="absolute text-white text-5xl  aesthetic">Our Aesthetics</h1>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div class="">
+            <img src="./images/pexels-rachel-claire-4577397.jpg" alt="">
+        </div>
+        <div class="">
+            <img src="./images/pexels-rachel-claire-4577397.jpg" alt="">
+        </div>
+        <div class="">
+            <img src="./images/pexels-rachel-claire-4992806.jpg" alt="">
+        </div>
+        <div class="">
+            <img src="./images/pexels-rachel-claire-4998026.jpg" alt="">
+        </div>
+        <div class="">
+            <img src="./images/pexels-rachel-claire-4992806.jpg" alt="">
+        </div>
+        <div class="">
+            <img src="./images/pexels-rachel-claire-4998026.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- Book A Table -->
+ <div id="Book">
+    <div class="page-right bg-gradient-to-r from-teal-900 to-stone-900 min-h-screen py-10">
+        <div class="page-right-inner max-w-4xl mx-auto px-4">
+          <div class="container-small bg-white rounded-lg shadow-lg p-8">
+            <div class="mb-4 text-center">
+              <h2 class="text-3xl font-semibold text-gray-900">Book a Table</h2>
+            </div>
+            <div class="mb-8 text-lg text-gray-700 text-center">
+                "Reserve your table now to enjoy a delightful dining experience with us!
+            </div>
+            <div class="form-wrapper">
+              <form id="wf-form-Reservation-Form" name="wf-form-Reservation-Form" method="get" class="space-y-6">
+                <div class="space-y-4">
+                  <div>
+                    <label for="Name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                           name="Name" placeholder="Enter your name" type="text" id="Name">
+                  </div>
+                  <div>
+                    <label for="Guests" class="block text-sm font-medium text-gray-700">Number of Guests</label>
+                    <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                           name="Guests" placeholder="2" type="number" id="Guests">
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label for="Date" class="block text-sm font-medium text-gray-700">Date</label>
+                      <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                             name="Date" placeholder="16.06.2022" type="text" id="Date">
+                    </div>
+                    <div>
+                      <label for="Time" class="block text-sm font-medium text-gray-700">Time</label>
+                      <input class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" 
+                             name="Time" placeholder="6pm" type="text" id="Time">
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <input type="submit" class="px-6 py-2 bg-indigo-600 text-white font-semibold rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500" 
+                         value="Book a Table">
+                </div>
+              </form>
+              <div class="form-message-success mt-6 hidden">
+                <div class="text-green-600">Thank you! Your submission has been received!</div>
+              </div>
+              <div class="form-message-error mt-6 hidden">
+                <div class="text-red-600">Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+          <footer class="mt-10 bg-white p-6 rounded-lg shadow-lg">
+            <div class="flex flex-col items-center">
+              <img src="https://cdn.prod.website-files.com/6321d0d284b5b7ca3857fad3/6321d4f35eab748617c65799_logo.svg" loading="lazy" alt="Nique Logo" class="h-12 mb-4">
+              <div class="text-sm text-gray-500 mb-4">
+                By <a href="https://templates.gola.io/" target="_blank" class="text-indigo-600 hover:underline">Anugrah</a>. 
+                Powered by <a href="https://webflow.com" target="_blank" class="text-indigo-600 hover:underline">Inspired from Figm</a>
+              </div>
+              <div class="text-sm text-gray-600">
+                <h3 class="text-lg font-semibold mb-2">Pages</h3>
+                <div class="flex flex-wrap justify-center gap-4 mb-4">
+                  <a href="/menu" class="text-indigo-600 hover:underline">Menu</a>
+                  <a href="/restaurant" class="text-indigo-600 hover:underline">Restaurant</a>
+                  <a href="/classes" class="text-indigo-600 hover:underline">Classes</a>
+                  <a href="/reservation" class="text-indigo-600 hover:underline font-semibold">Book a Table</a>
+                  <a href="/contact" class="text-indigo-600 hover:underline">Contact</a>
+                  <a href="/blog" class="text-indigo-600 hover:underline">Blog</a>
+                  <a href="/shop" class="text-indigo-600 hover:underline">Shop</a>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Utility Pages</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                  <a href="/template-info/styleguide" class="text-indigo-600 hover:underline">Styleguide</a>
+                  <a href="/template-info/licensing" class="text-indigo-600 hover:underline">Licensing</a>
+                  <a href="/template-info/changelog" class="text-indigo-600 hover:underline">Changelog</a>
+                  <a href="https://nique-template.webflow.io/404" class="text-indigo-600 hover:underline">404 Page</a>
+                  <a href="https://nique-template.webflow.io/401" class="text-indigo-600 hover:underline">Password Protected</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+      
+ </div>
+
+</body>
+</html>
